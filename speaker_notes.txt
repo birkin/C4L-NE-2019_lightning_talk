@@ -1,0 +1,68 @@
+C4L-NE talk v06
+
+01 / cover
+- What does it mean to complete a project, and to know you've done a _good_ job? The number of things that for me define "a good job" has grown over time.
+
+02-03-04 / the things
+- The things... Of course, your app or webapp needs to do what it's supposed to...
+- But these other supporting things _are_ crucial to a job well-done...
+- This talk isn't about these actual elements, though...
+
+05 / stress-image
+...But rather _how_ to make sure you've addressed these things initially, and _maintain_ these checks -- because projects get migrated to new servers -- or rebuilt -- or security vulnerabilities are discovered -- so these checks have to be reviewed periodically.
+
+06 / a solution...
+- I'll show show some features of a home-grown open-source checklist tracker I've built that has hit a great sweet-spot for me.
+- A caveat -- this is made for multiple developers, but it's currently only used by me, unlike some of my other projects that my colleagues actively use. But it's been useful enough for long enough I figured I'd share it.
+
+07 / the "badge"
+Ok, on an increasing number of my github projects, I've put a badge, like this. It's both a score-display and a link to the checklist-tracker. That score is dynamic: if I improve something, it'll be higher, and it can become lower, too.
+
+08 / checklist-tracker _public_ page
+If I click on the badge, it takes me to that project's checklist-tracker page. The public can see a _few_ parts of the check-list and status (no security vulnerabilities). But if I log-in...
+
+09 / checklist-tracker _logged-in_ page
+..._I_ can see the full checklist for this project with more status info -- note the dates, for instance. And if I click the 'Admin' link on the page...
+
+10 / admin edit
+...I can easily update the project -- here's a `no` about to be changed to a `yes`. If I do that, and hit save, the badge score would increase a bit -- both on the project's check-list page we just saw -- _and_, automatically, on the github badge.
+
+11 / new project admin
+So that was a checklist for an existing project. To create a new checklist is just a few steps. This is important, because if creating a checklist for a project is a hassle, I won't do it.
+
+12 / new project -- logged-in
+Ok, something else. Here's a logged-in overview of a new checklist I created in the Admin just a few days ago. Note that the project's badge score is zero (and is orange instead of green -- because that was just cool and fun to do!). Now, this is not not a bad project! I just haven't yet updated anything. But I don't want to advertise a score of "0", whether for vanity or fear of hackers.
+
+13 / new project -- public
+So here's the public / logged-out view. Note the badge score simply shows "<80", here, and on github if I add the badge there. This is important: I want some public transparency, but I don't want to penalize new-checklist creation.
+
+14 / project date example
+Another feature... In that zero-score project, all those dates said "(no date)" in red when I was logged in. Here's a logged-in overview of a project where something was affirmed to be ok, but long ago. If a date's empty, or over six months old, the score will be lowered -- this encourages maintenance over time.
+
+15 / email
+There are more features, but the last feature I'll note is that each developer gets a weekly email listing that person's projects, with bullets of what needs to be done.
+
+16 / why does this work?
+This system works for me because...
+- It's easy to create or update a project. There's no friction, and I can do pieces when convenient.
+- The badge provides a nice direct connection between the code and the tracker; the tracker isn't a distant separate thing-to-do.
+- The public score is an incentive -- we developers care about our work; I want that badge to be green and above 80%!
+- The stale-date penalty, with the associated score-drop -- and the email -- keep me from 'forgetting' maintenance.
+
+Anyway; we're all different, systems that work for some don't for others. If you want to try this, and have any trouble getting it running, let me know & I'll try to help.
+
+Thanks.
+
+ß
+
+<birkin_diana@brown.edu>
+
+---
+---
+
+images...
+stressed: <https://pixabay.com/vectors/emote-sad-stressed-unhappy-1299362/>
+happy: <http://pngimg.com/download/36181>
+
+---
+---
